@@ -15,6 +15,7 @@ namespace FizzBuzzWebProject.E2ETests.Pages
         public IWebElement numberElement => _driver.FindElement(By.Id("0"));
         public IWebElement runTestButton => _driver.FindElement(By.Id("RunTestButton"));
         public IWebElement cleanButton => _driver.FindElement(By.Id("CleanButton"));
+        public IWebElement aboutLink => _driver.FindElement(By.XPath("//a[contains(text(), 'About')]"));
 
         public FizzBuzzPage(IWebDriver driver) => _driver = driver;
         public void GotoFizzBuzzPage() => _driver.Url = "https://localhost:5001/";
