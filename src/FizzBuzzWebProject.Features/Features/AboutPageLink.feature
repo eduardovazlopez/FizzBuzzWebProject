@@ -1,11 +1,7 @@
 ﻿Feature: AboutPageLink
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Navegate to the About page
 
-@mytag
-Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+Scenario: Navegate to the About page
+	Given I am at the Home page
+    When I click the About link at the Navbar
+    Then the description of the FizzBuzz Test is displayed

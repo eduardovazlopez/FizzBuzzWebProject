@@ -1,11 +1,8 @@
 ﻿Feature: CleaningTheBoard
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Clean the board after running the FizzBuzz Test
 
-@mytag
-Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+Scenario: Cleaning the board
+	Given I am at the Home page
+    And the FizzBuzz Test is been executed
+    When I click the Clean Board button
+    Then all numbers are erased from the Home page

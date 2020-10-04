@@ -1,11 +1,10 @@
 ﻿Feature: FizzBuzzTest
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Run the FizzBuzz Test and check the result
 
-@mytag
-Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
-	When the two numbers are added
-	Then the result should be 120
+Scenario: Run FizzBuzz Test
+	Given I am at the Home page
+    When I click the Execute FizzBuzz Test button
+    Then numbers from 1 to 100 are printed
+    And numbers multiples of three prints Fizz
+    And numbers multiples of five prints Buzz
+    And numbers multiples of three and five prints FizzBuzz
